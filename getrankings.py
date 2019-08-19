@@ -40,13 +40,6 @@ rushing_defense.sort(key=lambda tup:tup[1])
 overall_offense.sort(key=lambda tup:tup[1], reverse=True)
 overall_defense.sort(key=lambda tup:tup[1])
 
-# print(passing_offense)
-# print(passing_defense)
-# print(rushing_offense)
-# print(rushing_defense)
-# print(overall_offense)
-# print(overall_defense)
-# print(games_played)
 
 def printstats(column):
     for x,y in enumerate(column):
