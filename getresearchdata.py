@@ -3,13 +3,26 @@ import argparse
 
 # matchupsfilenames = ['weeklymatchups/2018/Week2.csv','weeklymatchups/2018/Week3.csv','weeklymatchups/2018/Week4.csv','weeklymatchups/2018/Week5.csv','weeklymatchups/2018/Week6.csv','weeklymatchups/2018/Week7.csv','weeklymatchups/2018/Week8.csv','weeklymatchups/2018/Week9.csv','weeklymatchups/2018/Week10.csv','weeklymatchups/2018/Week11.csv','weeklymatchups/2018/Week12.csv','weeklymatchups/2018/Week13.csv']
 # matchupsfilenames = ['weeklymatchups/2017/Week2.csv','weeklymatchups/2017/Week3.csv','weeklymatchups/2017/Week4.csv','weeklymatchups/2017/Week5.csv','weeklymatchups/2017/Week6.csv','weeklymatchups/2017/Week7.csv','weeklymatchups/2017/Week8.csv','weeklymatchups/2017/Week9.csv','weeklymatchups/2017/Week10.csv','weeklymatchups/2017/Week11.csv','weeklymatchups/2017/Week12.csv','weeklymatchups/2017/Week13.csv']
-matchupsfilenames = ['weeklymatchups/2016/Week2.csv','weeklymatchups/2016/Week3.csv','weeklymatchups/2016/Week4.csv','weeklymatchups/2016/Week5.csv','weeklymatchups/2016/Week7.csv','weeklymatchups/2016/Week8.csv','weeklymatchups/2016/Week9.csv','weeklymatchups/2016/Week10.csv','weeklymatchups/2016/Week11.csv','weeklymatchups/2016/Week12.csv','weeklymatchups/2016/Week13.csv']
+# matchupsfilenames = ['weeklymatchups/2016/Week2.csv','weeklymatchups/2016/Week3.csv','weeklymatchups/2016/Week4.csv','weeklymatchups/2016/Week5.csv','weeklymatchups/2016/Week7.csv','weeklymatchups/2016/Week8.csv','weeklymatchups/2016/Week9.csv','weeklymatchups/2016/Week10.csv','weeklymatchups/2016/Week11.csv','weeklymatchups/2016/Week12.csv','weeklymatchups/2016/Week13.csv']
+# matchupsfilenames = ['weeklymatchups/2015/Week2.csv','weeklymatchups/2015/Week3.csv','weeklymatchups/2015/Week4.csv','weeklymatchups/2015/Week5.csv','weeklymatchups/2015/Week6.csv','weeklymatchups/2015/Week7.csv','weeklymatchups/2015/Week8.csv','weeklymatchups/2015/Week9.csv','weeklymatchups/2015/Week10.csv','weeklymatchups/2015/Week11.csv','weeklymatchups/2015/Week12.csv','weeklymatchups/2015/Week13.csv']
+# matchupsfilenames = ['weeklymatchups/2014/Week2.csv','weeklymatchups/2014/Week3.csv','weeklymatchups/2014/Week4.csv','weeklymatchups/2014/Week5.csv','weeklymatchups/2014/Week6.csv','weeklymatchups/2014/Week7.csv','weeklymatchups/2014/Week8.csv','weeklymatchups/2014/Week9.csv','weeklymatchups/2014/Week10.csv','weeklymatchups/2014/Week11.csv','weeklymatchups/2014/Week12.csv','weeklymatchups/2014/Week13.csv']
+# matchupsfilenames = ['weeklymatchups/2013/Week2.csv','weeklymatchups/2013/Week3.csv','weeklymatchups/2013/Week4.csv','weeklymatchups/2013/Week5.csv','weeklymatchups/2013/Week6.csv','weeklymatchups/2013/Week7.csv','weeklymatchups/2013/Week8.csv','weeklymatchups/2013/Week9.csv','weeklymatchups/2013/Week10.csv','weeklymatchups/2013/Week11.csv','weeklymatchups/2013/Week12.csv','weeklymatchups/2013/Week13.csv']
+# matchupsfilenames = ['weeklymatchups/2012/Week2.csv','weeklymatchups/2012/Week3.csv','weeklymatchups/2012/Week4.csv','weeklymatchups/2012/Week5.csv','weeklymatchups/2012/Week6.csv','weeklymatchups/2012/Week7.csv','weeklymatchups/2012/Week8.csv','weeklymatchups/2012/Week9.csv','weeklymatchups/2012/Week10.csv','weeklymatchups/2012/Week11.csv','weeklymatchups/2012/Week12.csv','weeklymatchups/2012/Week13.csv']
+# matchupsfilenames = ['weeklymatchups/2011/Week2.csv','weeklymatchups/2011/Week3.csv','weeklymatchups/2011/Week4.csv','weeklymatchups/2011/Week5.csv','weeklymatchups/2011/Week6.csv','weeklymatchups/2011/Week7.csv','weeklymatchups/2011/Week8.csv','weeklymatchups/2011/Week9.csv','weeklymatchups/2011/Week10.csv','weeklymatchups/2011/Week11.csv','weeklymatchups/2011/Week12.csv','weeklymatchups/2011/Week13.csv']
+matchupsfilenames = ['weeklymatchups/2010/Week2.csv','weeklymatchups/2010/Week3.csv','weeklymatchups/2010/Week4.csv','weeklymatchups/2010/Week5.csv','weeklymatchups/2010/Week6.csv','weeklymatchups/2010/Week7.csv','weeklymatchups/2010/Week8.csv','weeklymatchups/2010/Week9.csv','weeklymatchups/2010/Week10.csv','weeklymatchups/2010/Week11.csv','weeklymatchups/2010/Week12.csv','weeklymatchups/2010/Week13.csv']
 
 
 
 # statfilenames =     ['weeklystats/2018/Week1.csv','weeklystats/2018/Week2.csv','weeklystats/2018/Week3.csv','weeklystats/2018/Week4.csv','weeklystats/2018/Week5.csv','weeklystats/2018/Week6.csv','weeklystats/2018/Week7.csv','weeklystats/2018/Week8.csv','weeklystats/2018/Week9.csv','weeklystats/2018/Week10.csv','weeklystats/2018/Week11.csv','weeklystats/2018/Week12.csv']
 # statfilenames =     ['weeklystats/2017/Week1.csv','weeklystats/2017/Week2.csv','weeklystats/2017/Week3.csv','weeklystats/2017/Week4.csv','weeklystats/2017/Week5.csv','weeklystats/2017/Week6.csv','weeklystats/2017/Week7.csv','weeklystats/2017/Week8.csv','weeklystats/2017/Week9.csv','weeklystats/2017/Week10.csv','weeklystats/2017/Week11.csv','weeklystats/2017/Week12.csv']
-statfilenames =     ['weeklystats/2016/Week1.csv','weeklystats/2016/Week2.csv','weeklystats/2016/Week3.csv','weeklystats/2016/Week4.csv','weeklystats/2016/Week5.csv','weeklystats/2016/Week7.csv','weeklystats/2016/Week8.csv','weeklystats/2016/Week9.csv','weeklystats/2016/Week10.csv','weeklystats/2016/Week11.csv','weeklystats/2016/Week12.csv']
+# statfilenames =     ['weeklystats/2016/Week1.csv','weeklystats/2016/Week2.csv','weeklystats/2016/Week3.csv','weeklystats/2016/Week4.csv','weeklystats/2016/Week5.csv','weeklystats/2016/Week7.csv','weeklystats/2016/Week8.csv','weeklystats/2016/Week9.csv','weeklystats/2016/Week10.csv','weeklystats/2016/Week11.csv','weeklystats/2016/Week12.csv']
+# statfilenames =     ['weeklystats/2015/Week1.csv','weeklystats/2015/Week2.csv','weeklystats/2015/Week3.csv','weeklystats/2015/Week4.csv','weeklystats/2015/Week5.csv','weeklystats/2015/Week6.csv','weeklystats/2015/Week7.csv','weeklystats/2015/Week8.csv','weeklystats/2015/Week9.csv','weeklystats/2015/Week10.csv','weeklystats/2015/Week11.csv','weeklystats/2015/Week12.csv']
+# statfilenames =     ['weeklystats/2014/Week1.csv','weeklystats/2014/Week2.csv','weeklystats/2014/Week3.csv','weeklystats/2014/Week4.csv','weeklystats/2014/Week5.csv','weeklystats/2014/Week6.csv','weeklystats/2014/Week7.csv','weeklystats/2014/Week8.csv','weeklystats/2014/Week9.csv','weeklystats/2014/Week10.csv','weeklystats/2014/Week11.csv','weeklystats/2014/Week12.csv']
+# statfilenames =     ['weeklystats/2013/Week1.csv','weeklystats/2013/Week2.csv','weeklystats/2013/Week3.csv','weeklystats/2013/Week4.csv','weeklystats/2013/Week5.csv','weeklystats/2013/Week6.csv','weeklystats/2013/Week7.csv','weeklystats/2013/Week8.csv','weeklystats/2013/Week9.csv','weeklystats/2013/Week10.csv','weeklystats/2013/Week11.csv','weeklystats/2013/Week12.csv']
+# statfilenames =     ['weeklystats/2012/Week1.csv','weeklystats/2012/Week2.csv','weeklystats/2012/Week3.csv','weeklystats/2012/Week4.csv','weeklystats/2012/Week5.csv','weeklystats/2012/Week6.csv','weeklystats/2012/Week7.csv','weeklystats/2012/Week8.csv','weeklystats/2012/Week9.csv','weeklystats/2012/Week10.csv','weeklystats/2012/Week11.csv','weeklystats/2012/Week12.csv']
+# statfilenames =     ['weeklystats/2011/Week1.csv','weeklystats/2011/Week2.csv','weeklystats/2011/Week3.csv','weeklystats/2011/Week4.csv','weeklystats/2011/Week5.csv','weeklystats/2011/Week6.csv','weeklystats/2011/Week7.csv','weeklystats/2011/Week8.csv','weeklystats/2011/Week9.csv','weeklystats/2011/Week10.csv','weeklystats/2011/Week11.csv','weeklystats/2011/Week12.csv']
+statfilenames =     ['weeklystats/2010/Week1.csv','weeklystats/2010/Week2.csv','weeklystats/2010/Week3.csv','weeklystats/2010/Week4.csv','weeklystats/2010/Week5.csv','weeklystats/2010/Week6.csv','weeklystats/2010/Week7.csv','weeklystats/2010/Week8.csv','weeklystats/2010/Week9.csv','weeklystats/2010/Week10.csv','weeklystats/2010/Week11.csv','weeklystats/2010/Week12.csv']
+
 
 
 def getstats(query, column):
@@ -20,7 +33,13 @@ def getstats(query, column):
 for week,(matchup,stat) in enumerate(zip(matchupsfilenames, statfilenames)):
     # filename = 'researchdata/2018/Week' + str(week+2) + '.csv'
     # filename = 'researchdata/2017/Week' + str(week+2) + '.csv'
-    filename = 'researchdata/2016/Week' + str(week+2) + '.csv'
+    # filename = 'researchdata/2016/Week' + str(week+2) + '.csv'
+    # filename = 'researchdata/2015/Week' + str(week+2) + '.csv'
+    # filename = 'researchdata/2014/Week' + str(week+2) + '.csv'
+    # filename = 'researchdata/2013/Week' + str(week+2) + '.csv'
+    # filename = 'researchdata/2012/Week' + str(week+2) + '.csv'
+    # filename = 'researchdata/2011/Week' + str(week+2) + '.csv'
+    filename = 'researchdata/2010/Week' + str(week+2) + '.csv'
     f = open(filename, 'w')
     raw_team_stats = []
     raw_matchups = []
