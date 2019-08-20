@@ -8,7 +8,8 @@ import csv
 # datafiles = ['data/2013/Week1.csv','data/2013/Week2.csv','data/2013/Week3.csv','data/2013/Week4.csv','data/2013/Week5.csv','data/2013/Week6.csv','data/2013/Week7.csv','data/2013/Week8.csv','data/2013/Week9.csv','data/2013/Week10.csv','data/2013/Week11.csv','data/2013/Week12.csv']
 # datafiles = ['data/2012/Week1.csv','data/2012/Week2.csv','data/2012/Week3.csv','data/2012/Week4.csv','data/2012/Week5.csv','data/2012/Week6.csv','data/2012/Week7.csv','data/2012/Week8.csv','data/2012/Week9.csv','data/2012/Week10.csv','data/2012/Week11.csv','data/2012/Week12.csv']
 # datafiles = ['data/2011/Week1.csv','data/2011/Week2.csv','data/2011/Week3.csv','data/2011/Week4.csv','data/2011/Week5.csv','data/2011/Week6.csv','data/2011/Week7.csv','data/2011/Week8.csv','data/2011/Week9.csv','data/2011/Week10.csv','data/2011/Week11.csv','data/2011/Week12.csv']
-datafiles = ['data/2010/Week1.csv','data/2010/Week2.csv','data/2010/Week3.csv','data/2010/Week4.csv','data/2010/Week5.csv','data/2010/Week6.csv','data/2010/Week7.csv','data/2010/Week8.csv','data/2010/Week9.csv','data/2010/Week10.csv','data/2010/Week11.csv','data/2010/Week12.csv']
+# datafiles = ['data/2010/Week1.csv','data/2010/Week2.csv','data/2010/Week3.csv','data/2010/Week4.csv','data/2010/Week5.csv','data/2010/Week6.csv','data/2010/Week7.csv','data/2010/Week8.csv','data/2010/Week9.csv','data/2010/Week10.csv','data/2010/Week11.csv','data/2010/Week12.csv']
+datafiles = ['data/2009/Week1.csv','data/2009/Week2.csv','data/2009/Week3.csv','data/2009/Week4.csv','data/2009/Week5.csv','data/2009/Week6.csv','data/2009/Week7.csv','data/2009/Week8.csv','data/2009/Week9.csv','data/2009/Week10.csv','data/2009/Week11.csv','data/2009/Week12.csv']
 
 
 
@@ -62,7 +63,7 @@ for week,file in enumerate(datafiles):
         except:
             teamstats[home] = [myarray[1], myarray[0], myarray[3], myarray[2], myarray[5], myarray[4], 1]
 
-    filename = "weeklystats/2010/Week" + str(week+1) + ".csv"
+    filename = "weeklystats/2009/Week" + str(week+1) + ".csv"
     f = open(filename, "w")
 
     for x in teamstats:

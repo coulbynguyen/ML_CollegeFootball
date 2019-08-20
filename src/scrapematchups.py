@@ -128,8 +128,21 @@ base_url = 'https://www.espn.com'
 # espn = 'https://www.espn.com/college-football/schedule/_/week/10/year/2010'
 # espn = 'https://www.espn.com/college-football/schedule/_/week/11/year/2010'
 # espn = 'https://www.espn.com/college-football/schedule/_/week/12/year/2010'
-espn = 'https://www.espn.com/college-football/schedule/_/week/13/year/2010'
-
+# espn = 'https://www.espn.com/college-football/schedule/_/week/13/year/2010'
+#2009
+# espn = 'https://www.espn.com/college-football/schedule/_/year/2009'
+# espn = 'https://www.espn.com/college-football/schedule/_/week/2/year/2009'
+# espn = 'https://www.espn.com/college-football/schedule/_/week/3/year/2009'
+# espn = 'https://www.espn.com/college-football/schedule/_/week/4/year/2009'
+# espn = 'https://www.espn.com/college-football/schedule/_/week/5/year/2009'
+# espn = 'https://www.espn.com/college-football/schedule/_/week/6/year/2009'
+# espn = 'https://www.espn.com/college-football/schedule/_/week/7/year/2009'
+# espn = 'https://www.espn.com/college-football/schedule/_/week/8/year/2009'
+# espn = 'https://www.espn.com/college-football/schedule/_/week/9/year/2009'
+# espn = 'https://www.espn.com/college-football/schedule/_/week/10/year/2009'
+# espn = 'https://www.espn.com/college-football/schedule/_/week/11/year/2009'
+# espn = 'https://www.espn.com/college-football/schedule/_/week/12/year/2009'
+espn = 'https://www.espn.com/college-football/schedule/_/week/13/year/2009'
 
 fbs_teams = open("fbsteams.txt")
 teams = {}
