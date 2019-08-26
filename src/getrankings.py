@@ -7,6 +7,12 @@ def get_team_ranking(week,away,home):
     filename = 'src/weeklystats/2018/Week' + str(week-1) + '.csv'
     team_rank_filename = 'src/weeklymatchups/2018/Week' + str(week) + '.csv'
 
+    fbs_teams = open("src/fbsteams.txt")
+    teams = {}
+
+    for x in fbs_teams:
+        teams[x.rstrip()] = True
+    fbs_teams.close()
 
     with open(filename) as csvfile:
         reader = csv.reader(csvfile)
@@ -33,6 +39,10 @@ def get_team_ranking(week,away,home):
 
     for x in raw_training:
         key = x.pop(0)
+        try:
+            val = teams[key]
+        except:
+            continue
         myarray = list(map(float, x))
         overall_offense.append((key, myarray[0]/myarray[6]))
         overall_defense.append((key, myarray[1]/myarray[6]))

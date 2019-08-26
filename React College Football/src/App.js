@@ -88,7 +88,7 @@ export default class App extends Component{
     await fetch(homeRankGet, {mode: 'cors'}).then(res => res.json()).then((data) => {this.setState({homeTeamStats: JSON.parse(data)})}).catch(console.log)
   }
 
-  awayChange = (event, {value}) =>{
+  awayChange = async (event, {value}) =>{
     this.setState({
       awayTeamName: teams[value].text,
       awayTeamImage: teams[value].imgsrc,
@@ -96,11 +96,11 @@ export default class App extends Component{
       resultJson: null
     })
     var newurl = 'http://localhost:8000/predict/' + this.state.week + '?away=' + teams[value].text + '&home=' + this.state.homeTeamName
-    fetch(newurl, {mode: 'cors'}).then(res => res.json()).then((data) => {this.setState({resultJson: data})}).catch(console.log)
+    await fetch(newurl, {mode: 'cors'}).then(res => res.json()).then((data) => {this.setState({resultJson: data})}).catch(console.log)
     var awayRankGet = 'http://localhost:8000/rank/' + this.state.week + '?teamName=' + teams[value].text
-    fetch(awayRankGet, {mode: 'cors'}).then(res => res.json()).then((data) => {this.setState({awayTeamStats: JSON.parse(data)})}).catch(console.log)
+    await fetch(awayRankGet, {mode: 'cors'}).then(res => res.json()).then((data) => {this.setState({awayTeamStats: JSON.parse(data)})}).catch(console.log)
   }
-  homeChange = (event, {value}) =>{
+  homeChange = async (event, {value}) =>{
     this.setState({
       homeTeamName: teams[value].text,
       homeTeamImage: teams[value].imgsrc,
@@ -108,12 +108,12 @@ export default class App extends Component{
       resultJson: null
     });
     var newurl = 'http://localhost:8000/predict/' + this.state.week + '?away=' + this.state.awayTeamName + '&home=' + teams[value].text
-    fetch(newurl, {mode: 'cors'}).then(res => res.json()).then((data) => {this.setState({resultJson: data})}).catch(console.log)
+    await fetch(newurl, {mode: 'cors'}).then(res => res.json()).then((data) => {this.setState({resultJson: data})}).catch(console.log)
     var homeRankGet = 'http://localhost:8000/rank/' + this.state.week + '?teamName=' + teams[value].text
-    fetch(homeRankGet, {mode: 'cors'}).then(res => res.json()).then((data) => {this.setState({homeTeamStats: JSON.parse(data)})}).catch(console.log)
+    await fetch(homeRankGet, {mode: 'cors'}).then(res => res.json()).then((data) => {this.setState({homeTeamStats: JSON.parse(data)})}).catch(console.log)
   }
 
-  weekChange = (event, {value}) =>{
+  weekChange = async (event, {value}) =>{
     this.setState({
       week:value,
       awayTeamStats:null,
@@ -121,11 +121,11 @@ export default class App extends Component{
       resultJson:null
     })
     var newurl = 'http://localhost:8000/predict/' + value + '?away=' + this.state.awayTeamName + '&home=' + this.state.homeTeamName
-    fetch(newurl, {mode: 'cors'}).then(res => res.json()).then((data) => {this.setState({resultJson: data})}).catch(console.log)
+    await fetch(newurl, {mode: 'cors'}).then(res => res.json()).then((data) => {this.setState({resultJson: data})}).catch(console.log)
     var awayRankGet = 'http://localhost:8000/rank/' + value + '?teamName=' + this.state.awayTeamName
-    fetch(awayRankGet, {mode: 'cors'}).then(res => res.json()).then((data) => {this.setState({awayTeamStats: JSON.parse(data)})}).catch(console.log)
+    await fetch(awayRankGet, {mode: 'cors'}).then(res => res.json()).then((data) => {this.setState({awayTeamStats: JSON.parse(data)})}).catch(console.log)
     var homeRankGet = 'http://localhost:8000/rank/' + this.state.week + '?teamName=' + this.state.homeTeamName
-    fetch(homeRankGet, {mode: 'cors'}).then(res => res.json()).then((data) => {this.setState({homeTeamStats: JSON.parse(data)})}).catch(console.log)
+    await fetch(homeRankGet, {mode: 'cors'}).then(res => res.json()).then((data) => {this.setState({homeTeamStats: JSON.parse(data)})}).catch(console.log)
   }
 
   handleItemClick = (e, { name }) => this.setState({activeItem: name})
